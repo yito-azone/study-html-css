@@ -1,0 +1,60 @@
+/* スタイル用 */
+
+body {
+  color: #333333;
+  font-family: -apple-system , BlinkMacSystemFont , 'Helvetica Neue' , '游ゴシック' , 'Yu Gothic' , '游ゴシック体' , YuGothic , Verdana , 'メイリオ' , Meiryo , sans-serif;
+ /* GoogleChromeのバグ対策 */
+  font-weight: 500;
+  padding: 30px;
+}
+
+.grid_container,
+.grid_container2 {
+  background-color: #f0f7ff;
+	border: 2px solid #5088c9;
+	border-radius: 5px;
+}
+
+.grid_item {
+	background-color: #cbddf2;
+	border: 2px solid  #8cb1db;
+	color: #5088c9;
+	padding: 12px;
+}
+
+hr {
+	border: dashed 1px #ddd;
+	margin: 20px 0;
+}
+
+.grid_container2 {
+  display: grid;
+	width: 600px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+}
+
+.boxA {
+	background-color: #f0b000;
+}
+
+.boxB {
+	background-color: #87deac;
+}
+
+.boxC {
+	background-color: #edaaea;
+}
+
+.boxD {
+	background-color: #a5d0eb;
+}
+
+.nested {
+  border: 2px solid #ffdf5a;
+  border-radius: 5px;
+  background-color: #fffeeb;
+  padding: 1em;
+  border-radius: 5px;
+	color: #5088c9;
+}

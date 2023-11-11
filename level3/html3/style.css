@@ -1,0 +1,6 @@
+body {
+  color: #333333;
+  font-family: -apple-system , BlinkMacSystemFont , 'Helvetica Neue' , '游ゴシック' , 'Yu Gothic' , '游ゴシック体' , YuGothic , Verdana , 'メイリオ' , Meiryo , sans-serif;
+ /* GoogleChromeのバグ対策 */
+  font-weight: 500;
+}

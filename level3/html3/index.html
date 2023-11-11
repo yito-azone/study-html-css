@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>my website</title>
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- bxSlider CSS file -->
+    <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- drawer -->
+    </header>
+
+    <main>
+      <!-- bxslider -->
+      <ul class="bxslider">
+        <li><img src="images/pic1.jpg" alt="pic1" /></li>
+        <li><img src="images/pic2.jpg" alt="pic2" /></li>
+        <li><img src="images/pic3.jpg" alt="pic3" /></li>
+        <li><img src="images/pic4.jpg" alt="pic4" /></li>
+        <li><img src="images/pic5.jpg" alt="pic5" /></li>
+      </ul>
+      <!-- CSS Grid layout -->
+    </main>
+
+    <footer>
+      <!-- copyright -->
+    </footer>
+    <!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider({
+          auto: true,
+          controls: false,
+        });
+      });
+    </script>
+  </body>
+</html>
