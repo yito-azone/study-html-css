@@ -13,6 +13,7 @@ a {
 
 /* ヘッダーコンテンツ */
 .title-logo {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 5px;
 }
@@ -23,6 +24,8 @@ a {
 }
 
 .navigationbar-list {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
@@ -32,6 +35,8 @@ a {
 
 /* ピックアップコンテンツ */
 .pickup{
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 12px 15px;
 }
 
@@ -100,7 +105,7 @@ a {
 
 .main-image-img {
   width: 100%;
-  height: 240px;
+  max-height: 240px;
   object-fit: cover;
 }
 
@@ -301,4 +306,91 @@ footer {
   font-size: 1.2rem;
   padding: 15px;
   text-align: center;
+}
+
+/* タブレット用 */
+@media (min-width: 768px) {
+  /* ヘッダーコンテンツ */
+  .navigationbar-list {
+    justify-content: left;
+  }
+
+  .navigationbar-item {
+    font-size: 1.2rem;
+    padding: 0 10px;
+    margin-right: 60px;
+  }
+
+  /* ピックアップコンテンツ */
+  .pickup {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+  }
+
+  .pickup-article {
+    width: 32%;
+  }
+
+  .pickup-image-img {
+    max-height: 150px;
+  }
+
+  /* グリッドコンテンツ */
+  .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "main main main main profile"
+      "main main main main ranking"
+      "main main main main archive";
+  }
+
+  .main {grid-area: main}
+  .profile {grid-area: profile}
+  .ranking {grid-area: ranking}
+  .archive {grid-area: archive}
+
+  .main-article {
+    margin-bottom: 90px;
+  }
+
+  .ranking-image-img {
+    max-height: 125px;
+  }
+
+  .footer-flex {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about {
+    width: 32%;
+  }
+
+  .menu {
+    width: 32%;
+  }
+
+  .twitter {
+    width: 32%;
+  }
+}
+
+/* PC用 */
+@media (min-width: 1200px) {
+  .pickup-image-img {
+    max-height: 210px;
+  }
+
+  .main-image-img {
+    max-height: 420px;
+  }
+
+  .ranking-image-img {
+    max-height: 195px;
+  }
 }
