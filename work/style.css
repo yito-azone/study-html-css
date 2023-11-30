@@ -245,7 +245,7 @@ footer {
 
 .about-item {
   position: relative;
-  padding: 0px 0px 0px 1.2rem;
+  padding: 0 0 0 1.2rem;
   margin-bottom: 5px;
 }
 
@@ -253,10 +253,10 @@ footer {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0px;
+  left: 0;
   transform: translateY(-50%);
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border: 0.6rem solid transparent;
   border-left: 0.8rem solid #000;
 }
