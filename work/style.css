@@ -306,7 +306,7 @@ footer {
 }
 
 /* タブレット用 */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   /* ヘッダーコンテンツ */
   .navigationbar-list {
     justify-content: left;
@@ -386,7 +386,7 @@ footer {
 }
 
 /* PC用 */
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .pickup-image-img {
     max-height: 210px;
   }
