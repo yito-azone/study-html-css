@@ -1,9 +1,6 @@
-html {
-  font-size: 62.5%;
-}
- 
 body {
-  font-family: 'Helvetica Neue' , 'Yu Gothic Medium' , YuGothic , Verdana , Meiryo , sans-serif;
+  font-family: "Helvetica Neue", "Yu Gothic Medium", YuGothic, Verdana, Meiryo,
+    sans-serif;
   width: 100%;
 }
 
@@ -20,7 +17,7 @@ a {
 
 .navigationbar {
   background-color: #4a1649;
-  color: #FFF;
+  color: #fff;
 }
 
 .navigationbar-list {
@@ -34,7 +31,7 @@ a {
 }
 
 /* ピックアップコンテンツ */
-.pickup{
+.pickup {
   max-width: 1200px;
   margin: 0 auto;
   padding: 12px 15px;
@@ -72,7 +69,7 @@ a {
 }
 
 .pickup-readmore-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -82,7 +79,7 @@ a {
 }
 
 /* メインコンテンツ */
-.main{
+.main {
   padding: 12px 15px;
 }
 
@@ -127,7 +124,7 @@ a {
 }
 
 .main-readmore-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -165,7 +162,7 @@ a {
 
 /* ランキングコンテンツ */
 .ranking {
-  padding: 12px 15px; 
+  padding: 12px 15px;
 }
 
 .ranking-title {
@@ -197,7 +194,7 @@ a {
 /* アーカイブコンテンツ */
 
 .archive {
-  padding: 12px 15px; 
+  padding: 12px 15px;
 }
 
 .archive-title {
@@ -221,12 +218,12 @@ a {
 /* フッター */
 footer {
   margin-top: 30px;
-  background-color: #f6f6f6
+  background-color: #f6f6f6;
 }
 
 /* About */
 .about {
-  padding: 30px 15px 12px; 
+  padding: 30px 15px 12px;
 }
 
 .about-title {
@@ -248,25 +245,25 @@ footer {
 
 .about-item {
   position: relative;
-  padding: 0px 0px 0px 1.2rem;
+  padding: 0 0 0 1.2rem;
   margin-bottom: 5px;
 }
 
 .about-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
-  left: 0px;
+  left: 0;
   transform: translateY(-50%);
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border: 0.6rem solid transparent;
-  border-left: 0.8rem solid #000
+  border-left: 0.8rem solid #000;
 }
 
 /* Menu */
 .menu {
-  padding: 30px 15px 12px; 
+  padding: 30px 15px 12px;
 }
 
 .menu-title {
@@ -289,7 +286,7 @@ footer {
 
 /* Twitter */
 .twitter {
-  padding: 30px 15px 12px; 
+  padding: 30px 15px 12px;
 }
 
 .twitter-title {
@@ -309,7 +306,7 @@ footer {
 }
 
 /* タブレット用 */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   /* ヘッダーコンテンツ */
   .navigationbar-list {
     justify-content: left;
@@ -347,10 +344,18 @@ footer {
       "main main main main archive";
   }
 
-  .main {grid-area: main}
-  .profile {grid-area: profile}
-  .ranking {grid-area: ranking}
-  .archive {grid-area: archive}
+  .main {
+    grid-area: main;
+  }
+  .profile {
+    grid-area: profile;
+  }
+  .ranking {
+    grid-area: ranking;
+  }
+  .archive {
+    grid-area: archive;
+  }
 
   .main-article {
     margin-bottom: 90px;
@@ -381,7 +386,7 @@ footer {
 }
 
 /* PC用 */
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   .pickup-image-img {
     max-height: 210px;
   }
