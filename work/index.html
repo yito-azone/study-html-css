@@ -21,24 +21,20 @@
       </h1>
       <nav class="navigationbar">
         <ul class="navigationbar-list">
-          <li class="navigationbar-item">NEW</li>
-          <li class="navigationbar-item">COLUMN</li>
-          <li class="navigationbar-item">SERIES</li>
-          <li class="navigationbar-item">Q&A</li>
-          <li class="navigationbar-item">CONTACT</li>
+          <li class="navigationbar-item" tabindex="0">NEW</li>
+          <li class="navigationbar-item" tabindex="0">COLUMN</li>
+          <li class="navigationbar-item" tabindex="0">SERIES</li>
+          <li class="navigationbar-item" tabindex="0">Q&A</li>
+          <li class="navigationbar-item" tabindex="0">CONTACT</li>
         </ul>
       </nav>
     </header>
 
     <!-- ピックアップコンテンツ -->
-    <div class="pickup">
+    <section class="pickup">
       <article class="pickup-article">
         <div class="pickup-image">
-          <img
-            class="pickup-image-img"
-            src="images/pickup1.jpg"
-            alt="ピックアップコンテンツ1"
-          />
+          <iframe class="pickup-image-img" width="560" height="315" src="https://www.youtube.com/embed/ZY87H8VcdSg?si=lA4Ld_lnX3JgQThu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <p class="pickup-text">
           タイトルテキストテキストテキストテキストテキストテキストテキスト
@@ -53,6 +49,7 @@
             class="pickup-image-img"
             src="images/pickup2.jpg"
             alt="ピックアップコンテンツ2"
+            loading="lazy"
           />
         </div>
         <p class="pickup-text">
@@ -68,6 +65,7 @@
             class="pickup-image-img"
             src="images/pickup3.jpg"
             alt="ピックアップコンテンツ3"
+            loading="lazy"
           />
         </div>
         <p class="pickup-text">
@@ -77,12 +75,12 @@
           <a class="pickup-readmore-link" href="#">READ MORE</a>
         </div>
       </article>
-    </div>
+    </section>
 
     <!-- グリッドコンテンツ -->
-    <div class="grid">
+    <main class="grid">
       <!-- メインコンテンツ -->
-      <div class="main">
+      <section class="main">
         <div class="main-article">
           <h2 class="main-title">
             タイトルテキストテキストテキストテキストテキスト
@@ -92,7 +90,7 @@
             <div>カテゴリ1</div>
           </div>
           <h3 class="main-image">
-            <img class="main-image-img" src="images/main1.jpg" alt="メイン1" />
+            <img class="main-image-img" src="images/main1.jpg" alt="メイン1" loading="lazy" />
           </h3>
           <p class="main-text">
             本文テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -112,7 +110,7 @@
             <div>カテゴリ2</div>
           </div>
           <h3 class="main-image">
-            <img class="main-image-img" src="images/main2.jpg" alt="メイン2" />
+            <img class="main-image-img" src="images/main2.jpg" alt="メイン2" loading="lazy" />
           </h3>
           <p class="main-text">
             本文テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -132,7 +130,7 @@
             <div>カテゴリ3</div>
           </div>
           <h3 class="main-image">
-            <img class="main-image-img" src="images/main3.jpg" alt="メイン3" />
+            <img class="main-image-img" src="images/main3.jpg" alt="メイン3" loading="lazy" />
           </h3>
           <p class="main-text">
             本文テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -143,10 +141,10 @@
             <a class="main-readmore-link" href="#">READ MORE</a>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- プロフィールコンテンツ -->
-      <div class="profile">
+      <section class="profile">
         <h2 class="profile-image">
           <img
             class="profile-image-img"
@@ -156,14 +154,14 @@
         </h2>
         <h3 class="profile-name">Name Name</h3>
         <p class="profile-text">
-          プロフィールテキストテキストテキストテキストテキストテキストテキスト
+          <strong>プロフィール</strong>テキストテキストテキストテキストテキストテキストテキスト
           テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          <ruby>幸<rt>ゆき</rt>剛<rt>たか</rt></ruby>テキストテキストテキストテキストテキストテキスト<em>テキストテキスト</em>
         </p>
-      </div>
+      </section>
 
       <!-- ランキングコンテンツ -->
-      <div class="ranking">
+      <section class="ranking">
         <h2 class="ranking-title">Ranking</h2>
         <div class="ranking-content">
           <div class="ranking-image">
@@ -174,7 +172,7 @@
             />
           </div>
           <p class="ranking-text">
-            タイトルテキストテキストテキストテキストテキストテキスト
+            <mark>二酸化炭素はCO<sub>2</sub></mark>テキストテキストテキストテキストテキストテキスト
           </p>
         </div>
         <div class="ranking-content">
@@ -186,7 +184,7 @@
             />
           </div>
           <p class="ranking-text">
-            タイトルテキストテキストテキストテキストテキストテキスト
+            <u>2<sup>8</sup></u>タイトルテキストテキストテキストテキストテキストテキスト
           </p>
         </div>
         <div class="ranking-content">
@@ -201,30 +199,66 @@
             タイトルテキストテキストテキストテキストテキストテキスト
           </p>
         </div>
-      </div>
+      </section>
 
       <!-- アーカイブコンテンツ -->
-      <div class="archive">
+      <section class="archive">
         <h2 class="archive-title">Archive</h2>
+        <form method="get" action="#" class="archive-form">
+          <fieldset>
+            <legend><h3>アーカイブコンテンツ用情報</h3></legend>
+            <div>
+              <input type="text" name="search" placeholder="検索" />
+              <button type="submit" aria-label="検索" accesskey="1" value="検索" onclick="alert(1)">検索</button>
+            </div>
+            <div>
+              <input type="range" min="0" max="100" step="10" value="50" list="scale" />
+              <datalist id="scale">
+                <option value="0" label="0%" />
+                <option value="10" label="10%" />
+                <option value="20" label="20%" />
+                <option value="30" label="30%" />
+                <option value="40" label="40%" />
+                <option value="50" label="50%" />
+                <option value="60" label="60%" />
+                <option value="70" label="70%" />
+                <option value="80" label="80%" />
+                <option value="90" label="90%" />
+                <option value="100" label="100%" />
+              </datalist>
+            </div>
+            <div>
+              <select name="select" id="selecttest">
+                <optgroup label="哺乳類">
+                  <option value="いぬ">いぬ</option>
+                  <option value="ねこ">ねこ</option>
+                </optgroup>
+                <optgroup label="鳥類">
+                  <option value="いんこ">いんこ</option>
+              </select>
+            </div>
+          </fieldset>
+        </form>
+          
         <ul class="archive-list">
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
-          <li class="archive-item">XXXX年XX月(XX)</li>
+          <li class="archive-item"><ins><time>XXXX年XX月(XX)</time></ins></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><del><time>XXXX年XX月(XX)</time></del></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
+          <li class="archive-item"><time>XXXX年XX月(XX)</time></li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- フッターコンテンツ -->
     <footer>
@@ -233,14 +267,24 @@
         <div class="about">
           <h2 class="about-title">About</h2>
           <p class="about-text">
+            <abbr title="TravelBlog">TB</abbr>は
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
           </p>
           <ul class="about-list">
-            <li class="about-item">プロフィール詳細</li>
-            <li class="about-item">お仕事の依頼</li>
-            <li class="about-item">お問い合わせ</li>
+            <li><details><summary>プロフィール詳細</summary></details></li>
+            <li>
+              <details open>
+                <summary>お仕事の依頼</summary>
+                <ul>
+                  <li>宛先</li>
+                  <li>住所</li>
+                  <li>メール</li>
+                </ul>
+              </details>
+            </li>
+            <li><details><summary>お問い合わせ</summary></details></li>
           </ul>
         </div>
         <!-- Menu -->
@@ -262,7 +306,7 @@
       </div>
 
       <!-- copyright -->
-      <div class="copyright">&COPY; Travel ＆ Blog</div>
+      <div class="copyright"><small>&COPY; Travel ＆ Blog</small></div>
     </footer>
   </body>
 </html>
